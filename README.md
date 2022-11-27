@@ -7,7 +7,7 @@ Instructions on Contributing to RETCON can be found in [Contributing.md](./Contr
 ## Getting Started
 ### ⚠ RETCON IS UNFINISHED AND DOESN'T HAVE ANY RELEASE BUILDS ⚠ <br>
 ### Release Build 
-The recommended way to get started with RETCON is by downloading the lastest [release build](https://github.com/Opabina/RETCON/releases)
+The recommended way to get started with RETCON is by downloading the lastest [release build](https://github.com/JMC-Enterprises/RETCON/releases)
 
 ### Compiling yourself
 In order to compile RETCON by yourself you'll need an IDE like [Visual Studio](https://visualstudio.microsoft.com/) or [JetBrains Rider](https://www.jetbrains.com/rider/) and [.NET Core 7](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)<br>
