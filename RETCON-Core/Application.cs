@@ -1,9 +1,12 @@
-﻿namespace RETCON.Core
+﻿using RETCON.Core.Event;
+
+namespace RETCON.Core
 {
     public class Application
     {
         public Application()
-        { }
+        {
+        }
 
         ~Application() 
         { }
@@ -13,5 +16,12 @@
             while (true)
             { }
         }
+
+        public void OnEvent(BaseEvent e)
+        {
+            
+        }
+
+        private RETCON.Core.RET_Window.Window _window;
     }
 }

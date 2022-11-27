@@ -1,17 +1,37 @@
-﻿namespace RETCON.Core.Event
+﻿using System.Diagnostics;
+using RETCON.Core.RET_Window;
+
+namespace RETCON.Core.Event
 {
-    public class WindowResizeEvent : BaseEvent
+    public class WindowBaseEvent : BaseEvent
+    {
+        protected Window _window;
+        
+        public WindowBaseEvent(Window window)
+        {
+            _category = EventCategory.Window;
+            
+            _window = window;
+        }
+
+        public void Dispatch()
+        {
+            _window.EventCallback(this);
+        }
+    }
+    
+    public class WindowResizeEvent : WindowBaseEvent
     {
         private uint _width;
         private uint _height;
 
-        public WindowResizeEvent(uint width, uint height)
+        public WindowResizeEvent(Window window, uint width, uint height) : base(window)
         {
             _width = width;
             _height = height;
-
-            _category = EventCategory.Window;
+            
             _type = EventType.WindowResize;
+            _window = window;
         }
 
         uint GetWidth() { return _width; }
@@ -23,44 +43,43 @@
         }
     }
 
-    public class WindowCloseEvent : BaseEvent
+    public class WindowCloseEvent : WindowBaseEvent
     {
-        public WindowCloseEvent()
+        public WindowCloseEvent(Window window) : base(window)
         {
-            _category = EventCategory.Window;
             _type = EventType.WindowClose;
+            _window = window;
         }
     }
-
-    //TODO: Add Window public class as parameters
-    public class WindowOpenEvent : BaseEvent
+    
+    public class WindowOpenEvent : WindowBaseEvent
     {
-        public WindowOpenEvent()
+        public WindowOpenEvent(Window window) : base(window)
         {
             _category = EventCategory.Window;
             _type = EventType.WindowOpen;
         }
     }
 
-    public class WindowFocusEvent : BaseEvent
+    public class WindowFocusEvent : WindowBaseEvent
     {
-        public WindowFocusEvent()
+        public WindowFocusEvent(Window window) : base(window)
         {
-            _category = EventCategory.Window;
             _type = EventType.WindowFocus;
+            _window = window;
         }
     }
 
-    public class WindowLostFocusEvent : BaseEvent
+    public class WindowLostFocusEvent : WindowBaseEvent
     {
-        public WindowLostFocusEvent()
+        public WindowLostFocusEvent(Window window) : base(window)
         {
-            _category = EventCategory.Window;
-            _type = EventType.WindowFocus;
+            _type = EventType.WindowLostFocus;
+            _window = window;
         }
     }
 
-    public class WindowMovedEvent : BaseEvent
+    public class WindowMovedEvent : WindowBaseEvent
     {
         private uint _x;
         private uint _y;
@@ -68,12 +87,11 @@
         public uint GetX() { return _x; }
         public uint GetY() { return _y; }
 
-        public WindowMovedEvent(uint x, uint y)
+        public WindowMovedEvent(Window window, uint x, uint y) : base(window)
         {
             _x = x;
             _y = y;
 
-            _category = EventCategory.Window;
             _type = EventType.WindowMoved;
         }
 
