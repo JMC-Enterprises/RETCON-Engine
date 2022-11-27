@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>RETCON.Core</RootNamespace>
     <AssemblyName>RETCON.Core</AssemblyName>
     <Nullable>enable</Nullable>
@@ -15,6 +14,8 @@
     <RepositoryUrl>https://github.com/Opabina/RETCON</RepositoryUrl>
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <LangVersion>11</LangVersion>
+    <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

@@ -44,8 +44,7 @@ namespace RETCON.Core.Event
         protected EventCategory _category;
         protected EventType _type;
 
-        public bool IsHandled = false;
-
+        public bool IsHandled { get; set; } = false;
         public virtual void Dispatch() { }
 
         public static int GetCategoryFlags(EventCategory category)
