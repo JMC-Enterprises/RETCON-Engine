@@ -45,7 +45,9 @@ namespace RETCON.Core.Event
         protected EventType _type;
 
         public bool IsHandled { get; set; } = false;
-        public virtual void Dispatch() { }
+
+        public virtual void Dispatch()
+        { }
 
         public static int GetCategoryFlags(EventCategory category)
         {
@@ -55,6 +57,11 @@ namespace RETCON.Core.Event
         public bool IsInCategory(EventCategory search)
         {
             return _category == search;
+        }
+        
+        public bool IsType(EventType type)
+        {
+            return _type == type;
         }
 
         public virtual EventType GetEventType()
@@ -77,7 +84,6 @@ namespace RETCON.Core.Event
         {
             _event = arg;
         }
-
 
         public bool Dispatch()
         {

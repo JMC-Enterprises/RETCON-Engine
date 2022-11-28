@@ -5,11 +5,25 @@
     <projectFile>Testing/Testing.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd7abd28-3d81-4d86-835a-c7854771d594" name="Changes" comment="" />
+    <list default="true" id="cd7abd28-3d81-4d86-835a-c7854771d594" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RETCON-Engine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RETCON-Engine/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apps/RETCON-Testing/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/RETCON-Testing/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/Application.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RETCON-Core/Application.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/Event/BaseEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RETCON-Core/Event/BaseEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/Event/KeyEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RETCON-Core/Event/KeyEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/Event/WindowEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RETCON-Core/Event/WindowEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Glfw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RETCON-Core/GLFW/Glfw.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/Window/Window.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RETCON-Core/Window/Window.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/global.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b8d2795a624ec1ca285de7c049f728624e8b8a82388f8d67db20c33442b28f53/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RETCON-Core/OpenGL/GL.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -19,23 +33,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\leont\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\leont\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\leont\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\leont\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\leont\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\leont\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.Testing">
     <configuration name="RETCON-Testing" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Apps/RETCON-Testing/bin/Debug/net7.0/RETCON-Testing.exe" />
@@ -93,6 +107,9 @@
       <workItem from="1669566205054" duration="798000" />
       <workItem from="1669567020374" duration="504000" />
       <workItem from="1669567956340" duration="1311000" />
+      <workItem from="1669577510673" duration="263000" />
+      <workItem from="1669579225620" duration="2291000" />
+      <workItem from="1669648736924" duration="710000" />
     </task>
     <servers />
   </component>

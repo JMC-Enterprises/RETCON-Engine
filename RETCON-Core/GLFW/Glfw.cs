@@ -669,7 +669,7 @@ namespace GLFW
         /// <param name="focusCallback">The new callback, or <c>null</c> to remove the currently set callback.</param>
         [DllImport(LIBRARY, EntryPoint = "glfwSetWindowFocusCallback", CallingConvention = CallingConvention.Cdecl)]
         [return: MarshalAs(UnmanagedType.FunctionPtr, MarshalTypeRef = typeof(FocusCallback))]
-        public static extern FocusCallback SetWindowFocusCallback(Window window, FocusCallback focusCallback);
+        public static extern bool SetWindowFocusCallback(Window window, FocusCallback focusCallback);
 
         /// <summary>
         ///     This function retrieves the major, minor and revision numbers of the GLFW library.

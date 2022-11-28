@@ -1,5 +1,5 @@
 ﻿using System.Diagnostics;
-using RETCON.Core.RET_Window;
+using RETCON.Core.Graphics;
 
 namespace RETCON.Core.Event
 {
@@ -56,8 +56,8 @@ namespace RETCON.Core.Event
     {
         public WindowOpenEvent(Window window) : base(window)
         {
-            _category = EventCategory.Window;
             _type = EventType.WindowOpen;
+            _window = window;
         }
     }
 
@@ -123,6 +123,12 @@ namespace RETCON.Core.Event
 
             _category = EventCategory.Application;
             _type = EventType.AppUpdate;
+        }
+
+        public override void Dispatch()
+        {
+            base.Dispatch();
+            Logger.Logger.Engine.Log($"DELTA TIME: {_dt}", Logger.LogColors.Trace);
         }
     }
 

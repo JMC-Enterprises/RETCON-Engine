@@ -1,4 +1,6 @@
-﻿namespace RETCON.Core.Event
+﻿using System;
+
+namespace RETCON.Core.Event
 {
     public class KeyEvent : BaseEvent
     {
