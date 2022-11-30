@@ -3,7 +3,7 @@ using RETCON.Core.Graphics;
 
 namespace RETCON.Core.OpenGL;
 
-public unsafe struct GlfWwindow : IEquatable<GlfWwindow>
+public struct GlfWwindow : IEquatable<GlfWwindow>
 {
     private readonly IntPtr _handle;
 
