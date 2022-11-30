@@ -6,50 +6,115 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd7abd28-3d81-4d86-835a-c7854771d594" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/RETCON-Core/RETCON-GL/GLFWwindow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RETCON-Engine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RETCON-Engine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apps/RETCON-Testing/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Apps/RETCON-Testing/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DLLs/libRETCON_GLFW.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DLLs/libRETCON_GLFW.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RETCON-Core/Application.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RETCON-Core/Application.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RETCON-Core/Event/BaseEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RETCON-Core/Event/BaseEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RETCON-Core/Event/KeyEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RETCON-Core/Event/KeyEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RETCON-Core/Event/WindowEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RETCON-Core/Event/WindowEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Glfw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RETCON-Core/GLFW/Glfw.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/CharEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/ContentScaleEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Credits.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Delegates.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/ClientApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/ConnectionStatus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/Constants.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/ContextApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/ContextAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/CursorMode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/CursorType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/ErrorCode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/GamePadAxis.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/GamePadButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/Hat.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/Hint.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/InputMode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/InputState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/Joystick.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/Keys.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/ModifierKeys.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/MouseButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/Profile.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/ReleaseBehavior.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/Robustness.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Enums/WindowAttribute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Exception.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/FileDropEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/GameWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Glfw.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/JetBrains.Annotations.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/KeyEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/MaximizeEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/MouseButtonEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/MouseMoveEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Native.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/NativeWindow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/SizeChangeEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Strings.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Strings.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Structs/Cursor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Structs/EGLContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Structs/EGLDisplay.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Structs/EGLSurface.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Structs/GLXContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Structs/GamePadState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Structs/GammaRamp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Structs/GammaRampInternal.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Structs/HGLRC.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Structs/Image.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Structs/Monitor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Structs/NSOpenGLContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Structs/OSMesaContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Structs/VideoMode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Structs/Window.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Util.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/GLFW/Vulkan.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/OpenGL/GL.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RETCON-Core/RETCON-GL/RETCON-GL.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RETCON-Core/RETCON-GL/RETCON-GL.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RETCON-Core/Window/Window.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RETCON-Core/Window/Window.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/global.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b8d2795a624ec1ca285de7c049f728624e8b8a82388f8d67db20c33442b28f53/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RETCON-Core/OpenGL/GL.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2GWyrQshEVuEIgHDC8Uxgh7j3en" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\leont\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\leont\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\leont\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\leont\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\leont\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\leont\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.Testing">
     <configuration name="RETCON-Testing" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Apps/RETCON-Testing/bin/Debug/net7.0/RETCON-Testing.exe" />
@@ -109,7 +174,12 @@
       <workItem from="1669567956340" duration="1311000" />
       <workItem from="1669577510673" duration="263000" />
       <workItem from="1669579225620" duration="2291000" />
-      <workItem from="1669648736924" duration="710000" />
+      <workItem from="1669648736924" duration="1700000" />
+      <workItem from="1669652554058" duration="978000" />
+      <workItem from="1669654600648" duration="7000" />
+      <workItem from="1669818401006" duration="943000" />
+      <workItem from="1669832121605" duration="2321000" />
+      <workItem from="1669836868168" duration="2524000" />
     </task>
     <servers />
   </component>

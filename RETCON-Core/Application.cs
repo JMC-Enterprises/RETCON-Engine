@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics;
-using GLFW;
 using RETCON.Core.Graphics;
 using RETCON.Core.Logger;
 
@@ -7,6 +6,10 @@ namespace RETCON.Core
 {
     public class Application
     {
+        private Stopwatch _sw = new Stopwatch();
+        private float _dt = 0.0f;
+        private bool _canUpdate = true;
+        
         public Application()
         {
         }
@@ -35,26 +38,12 @@ namespace RETCON.Core
             }
         }
 
-        private Stopwatch _sw = new Stopwatch();
-        private float _dt = 0.0f;
-        private bool _canUpdate = true;
-        
         protected virtual void OnUpdate()
         {
             if (!_canUpdate) return;
             _sw.Start();
 
             // Get Input
-            // Check if Escape Key is pressed
-            if (Input.IsKeyPressed(Keys.Escape, _window.glWindow))
-            {
-                Logger.Logger.Application.Log($"Escape key pressed, closing window", LogColors.Success);
-                _canUpdate = false;
-                
-                // Close Window
-                _window.Terminate();
-                return;
-            }
 
             // Get Delta Time
             _sw.Stop();
