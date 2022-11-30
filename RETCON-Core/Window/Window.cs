@@ -47,6 +47,7 @@ namespace RETCON.Core.Graphics
                 (win, sizeWidth, sizeHeight) => Gl.glViewport(0, 0, sizeWidth, sizeHeight));
 
             // Create Events
+            /*
             Glfw.SetWindowFocusCallback(glWindow, (win, focusing) =>
                 {
                     if (focusing)
@@ -59,6 +60,7 @@ namespace RETCON.Core.Graphics
                     var unfocusEvent = new WindowLostFocusEvent(this);
                     unfocusEvent.Dispatch(); 
                 });
+            */
             
             WindowOpenEvent openEvent = new WindowOpenEvent(this);
             openEvent.Dispatch();
@@ -100,11 +102,6 @@ namespace RETCON.Core.Graphics
         public void SetEventCallback(EventCallbackFunction func)
         {
             EventCallback = func;
-        }
-
-        public void ChangeTitle(string newTitle)
-        {
-            Glfw.SetWindowTitle(glWindow, title);
         }
     }
 

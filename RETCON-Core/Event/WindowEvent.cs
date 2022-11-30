@@ -50,6 +50,11 @@ namespace RETCON.Core.Event
             _type = EventType.WindowClose;
             _window = window;
         }
+
+        public override string ToString()
+        {
+            return $"{_window.title} closed";
+        }
     }
     
     public class WindowOpenEvent : WindowBaseEvent
@@ -128,7 +133,12 @@ namespace RETCON.Core.Event
         public override void Dispatch()
         {
             base.Dispatch();
-            Logger.Logger.Engine.Log($"DELTA TIME: {_dt}", Logger.LogColors.Trace);
+            Logger.Logger.Engine.Log($"Update took {this}", Logger.LogColors.Trace);
+        }
+
+        public override string ToString()
+        {
+            return $"{_dt * 1000}ms";
         }
     }
 

@@ -1,9 +1,7 @@
 ﻿using System.Diagnostics;
 using GLFW;
-using RETCON.Core.Event;
 using RETCON.Core.Graphics;
 using RETCON.Core.Logger;
-using Window = GLFW.Window;
 
 namespace RETCON.Core
 {
@@ -18,6 +16,19 @@ namespace RETCON.Core
 
         public virtual void Run()
         {
+            try
+            {
+                OpenGL.RetconGl.Init();
+            }
+            catch
+            {
+                Logger.Logger.Engine.Log("libRETCON_GLFW.dll not found!", LogColors.Critical);
+                System.Console.ReadKey();
+                return;
+            }
+            
+            Logger.Logger.Engine.Log("Initalized libRETCON_GLFW.dll successfully!", LogColors.Success);
+
             while (true)
             {
                 OnUpdate();
@@ -44,7 +55,7 @@ namespace RETCON.Core
                 _window.Terminate();
                 return;
             }
-            
+
             // Get Delta Time
             _sw.Stop();
             _dt = _sw.ElapsedMilliseconds / 1000.0f;
