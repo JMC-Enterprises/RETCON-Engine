@@ -1,3 +1,6 @@
+# Warning! This repository has been archived due to work being stopped on it.
+## We hope you enjoyed the project.
+
 # RETCON
 RETCON is a game engine built with C#. It's inspired by the Source engine's Hammer, and is named after the video game [Title_Pending](https://devbeef.com/tp)'s RETCON.
 
